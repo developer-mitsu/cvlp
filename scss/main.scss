@@ -1546,7 +1546,7 @@ tr.content {
         }
         &__content {
             margin-top: 10px;
-            height: 120px;
+            min-height: 120px;
         }
         h4 {
             margin-bottom: 10px;

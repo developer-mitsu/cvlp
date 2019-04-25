@@ -1555,7 +1555,7 @@ tr.content th {
 }
 .voice-description__content {
   margin-top: 10px;
-  height: 120px;
+  min-height: 120px;
 }
 .voice-description h4 {
   margin-bottom: 10px;
