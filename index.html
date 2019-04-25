@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CodeVillage</title>
+    <link rel="shortcut icon" href="./favicon.ico">
+    <link href="https://fonts.googleapis.com/css?family=Khula" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">    
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+
+    
+
+</head>
+<body>
+<nav class="sp" id="js-navMenu">
+    <a class="menu-close-trigger js-menuCloseTrigger">
+        <span></span>
+        <span></span>
+    </a>
+    <ul>
+        <li><a href="#about" class="js-menuCloseTrigger"></a>CodeVillageとは</li>
+        <li><a href="#curriculum" class="js-menuCloseTrigger"></a>カリキュラム</li>
+        <li><a href="#entry" class="js-menuCloseTrigger"></a>受講について</li>
+        <li><a href="#tution" class="js-menuCloseTrigger"></a>料金</li>
+        <li class="reservation"><a href="#contact" id="js-menuCloseTrigger" class="js-menuCloseTrigger"></a>無料カウンセリングを予約する</li>
+    </ul>
+</nav>
+<div class="wrapper">
+    <header>
+        <h1><a href="#">Code Village</a></h1>
+        <a class="menu-trigger tab" id="js-menuTrigger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </a>              
+        <nav class="pc">
+            <ul>
+                <li><a href="#about">CodeVillageとは</a></li>
+                <li><a href="#curriculum">カリキュラム</a></li>
+                <li><a href="#entry">受講について</a></li>
+                <li><a href="#tution">料金</a></li>
+                <a href="#contact"><li class="reservation">無料カウンセリングを予約する</li></a>
+            </ul>
+        </nav>
+    </header>
+    <section class="top">
+        <div class="top__adjustment-box"></div>
+        <div class="top__eyecatch"></div>
+        <img src="img/01_firstview_bg_border.png" alt="">
+        <div class="top__copy">
+            <p>先端技術を</p>
+            <p>短期間で学ぶ</p>
+            <p>圧倒的な学習量で学ぶ</p>
+            <p class="small">差をつけたいひとのためのプログラミング道場</p>
+        </div>
+        <div class="reservation-btn__wrapper">
+            <div class="reservation-btn__bg"></div>
+            <a href="#contact" class="reservation-btn__main"></a>
+            <a href="#contact" class="reservation-btn__description">無料カウンセリングはこちら</a>    
+        </div>
+    </section>
+    <section class="about" id="about">
+        <div class="about__title">
+            <p>ABOUT</p>
+            <h2>Code Villageとは</h2>
+        </div>
+        <p>プログラミング教室Code Villageは<span>未経験から多様な働き方の選択肢を持つ事</span>を目的としたスパルタ教室です。
+        <p>私達はプログラミングスキルは<span>誰しもが独学で習得出来る技術</span>と考えており、スクールの存在意義は<span>豊富な教材と優秀な講師、学習のマイルストーン</span>による技術習得の時短だと捉えております。</p>
+        <p>Code Villageでは独学で習得する自信や、モチベーションのある方こそ利用して頂きたい仕組みとなっており、<span>レベルに上限のないカリキュラム、集団から個別への飛び級制度</span>などを導入する事によって頑張る人を最大限応援するスクールとなっております。</p>   
+        <p>1日3H以上の自学習強制による学習の習慣化、そして<span>チーム開発やペアプロなど実務を意識したカリキュラム</span>で<span>短期間で圧倒的な成長</span>を目指します。</p>
+        <div class="about-feature__title"></div>
+    </section>
+
+    <section class="about-feature">
+        <section class="balloon">
+            <h2>学習プログラムの特徴</h2>
+        </section>
+            
+        <img src="img/01_firstview_bg_border.png" alt="">
+        <img src="img/01_firstview_bg_border.png" class="second" alt="">
+        <div class="about-feature__item">
+            <p class="item__title"><span>1</span>コミュニティ</p>
+            <div class="item__contents-wrapper">
+                <img src="img/02_about02_img01.jpeg" alt="" class="item__img">
+                <p class="item__description">Code Villageには志・学習意欲共に高い生徒が多数在籍しており、校外の時間でクラスを跨いだ交流が行われております。中には共に起業したり、プロダクトを共同開発している生徒様もいらっしゃいます。</p>
+            </div>
+        </div>
+        <div class="about-feature__item">
+            <p class="item__title"><span>2</span>詰め込み授業</p>
+            <div class="item__contents-wrapper">
+                <img src="img/02_about02_img02.jpeg" alt="" class="item__img">
+                <p class="item__description">Code Villageでは長期間ダラダラ学習するのではなく、短期間で圧倒的な学習量を求め、約300時間以上 (最低)の課題の取り組みと、18回の直接講義の参加を強制化しております。学習する習慣と、技術の基礎を習得する事により卒業後の自走を後押ししております。</p>
+            </div>
+        </div>
+        <div class="about-feature__item">
+            <p class="item__title"><span>3</span>習熟度別授業</p>
+            <div class="item__contents-wrapper">
+                <img src="img/02_about02_img03.jpeg" alt="" class="item__img">
+                <p class="item__description">基本的に未経験者(初学者)を対象としておりますが、数週間で生徒のレベルが二極化して参ります。 講義の中間でクラス分けを行う事により、双方有意義な受講をする事が可能です。進捗上限はなく、更に向上心と結果の伴う生徒様には最大個別コース移行も行なっております。</p>
+            </div>
+        </div>
+    </section>
+    <section class="flow" id="flow">
+        <div class="flow__title">
+            <p>FLOW</p>
+            <h2>講義フロー</h2>
+        </div>
+        <section class="flow-list">
+            <div class="flow-list-item">
+                <p class="flow-list-item__title"><span>1</span>事前課題</p>
+                <img src="img/03flow_para01_illustration.png" alt="" class="flow-list-item__img">
+                <p class="flow-list-item__description">
+                    入校前に事前課題として<span>html/cssの基礎理解</span>をして頂きます。<br> 簡易的な1枚のHPのコーディングが出来るまでの<span>学習のマイルストーン</span>を提供し、受講前に基礎理解をして頂いた上で更なる技術向上を目指します。
+                </p>
+            </div>
+            <div class="flow-list-item">
+                <p class="flow-list-item__title"><span>2</span>対面講義</p>
+                <img src="img/flow2.png" alt="" class="flow-list-item__img">
+                <p class="flow-list-item__description"><span>全18回</span>の対面による集団講義を受講して頂きます。 強制化された自学習に加え、事前課題による基礎知識を習得した上での講義実施になりますので、 より一層<span>レベルの高いコンテンツ提供</span>が可能になります。</p>
+            </div>
+            <div class="flow-list-item">
+                <p class="flow-list-item__title"><span>3</span>自主学習</p>
+                <img src="img/flow3.png" alt="" class="flow-list-item__img fit">
+                <p class="flow-list-item__description">受講期間中は<span>1日3H以上の自学習</span>を強制しております。 量を伴う復習/予習を行う事により、<span>学習の習慣化と短期的な成長</span>を見込む事が可能となります。</p>
+            </div>
+            <div class="flow-list-item clear-after">
+                <p class="flow-list-item__title"><span>4</span>コミュニティを活かす</p>
+                <img src="img/03_flow_para03_illustration.png" alt="" class="flow-list-item__img">
+                <p class="flow-list-item__description">過去の生徒様の中には共に起業を試みたり、共に受託開発を行う生徒も多数存在致します。今後も<span>成長するコミュニティ</span>をご自身の技術習得、キャリア形成に活かしてください。 また、弊社が不定期に開催するイベントに参加して頂く事も可能となっております。卒業して終わりの関係値ではなく当社、<span>生徒様共に成長出来る関係形成</span>を目指しております。</p>
+            </div>
+        </section>
+        <div class="gradation"></div>
+    </section>
+    <section class="curriculum" id="curriculum">
+        <div class="curriculum__title">
+            <p>CURRICULUM</p>
+            <h2>カリキュラム</h2>
+        </div>
+        <p class="curriculum__description">
+            受講期間の3ヶ月で、ゼロからモダンな企業の現場で通用するフロントエンドエンジニアを育成します。<br>本スクールの育成方針は、ひとえに「現場で必要とされるエンジニア」です。<br>その絶対命題のもと、以下の指針に基づいてカリキュラムを設計しています。
+        </p>
+    </section>
+    <section class="curriculum-list">
+        <img src="img/01_firstview_bg_border.png" alt="" srcset="">
+        <div class="curriculum-list-item">
+            <p class="curriculum-list-item__title">フロントエンド初級</p>
+            <p class="curriculum-list-item__description">HTML/CSSの基礎を学習し、基礎的なマークアップ技術を身に着けます。 課題に取り組み、受講期間中を通してマークアップの経験値を積むことで、高い水準まで技術を引き上げます。</p>
+            <ul>
+                <li><img src="img/check-box.png" alt="">HTML</li>
+                <li><img src="img/check-box.png" alt="">CSS</li>
+                <li><img src="img/check-box.png" alt="">jQuery</li>
+            </ul>
+        </div>
+        <div class="curriculum-list-item">
+            <p class="curriculum-list-item__title">フロントエンド中級</p>
+            <p class="curriculum-list-item__description">複数デバイスへの対応や、アニメーション、設計等の一歩踏み込んだCSSの技術を習得します。また、javascriptの基礎文法・DOMの概念を学習します。</p>
+            <ul>
+                <li><img src="img/check-box.png" alt="">レスポンシブコーディング</li>
+                <li><img src="img/check-box.png" alt="">アニメーション</li>
+                <li><img src="img/check-box.png" alt="">javascript</li>
+                <li><img src="img/check-box.png" alt="">CSS設計ノウハウ</li>
+            </ul>
+        </div>
+        <div class="curriculum-list-item">
+            <p class="curriculum-list-item__title">フロントエンド上級</p>
+            <p class="curriculum-list-item__description">トレンドに則った技術を学習し、より実践的な開発を行います。また、Git等を用いたチーム開発技法を学習します。</p>
+            <ul>
+                <li><img src="img/check-box.png" alt="">Yarn・webpack</li>
+                <li><img src="img/check-box.png" alt="">フロントエンドフレームワーク</li>
+                <li><img src="img/check-box.png" alt="">Git/Github</li>
+            </ul>
+        </div>
+        <div class="reservation-btn__wrapper curriculum-more">
+            <div class="reservation-btn__bg"></div>
+            <a href="./curriculum" class="reservation-btn__main"></a>
+            <a href="./curriculum" class="reservation-btn__description">詳しいカリキュラムはこちら</a>    
+        </div>
+
+    </section>
+
+    <section class="entry" id="entry">
+        <div class="entry__title">
+            <p>STEPS TO START</p>
+            <h2>入校までの流れ</h2>
+        </div>
+        <div class="entry-list">
+            <div class="entry-list-item">
+                <img src="img/05_stepToStart_illustration01.png" alt="" class="entry-list-item__img">
+                <p class="entry-list-item__title">お問い合わせ</p>
+                <p class="entry-list-item__description">お問い合わせ、無料カウンセリングの受付はWEBサイトからいつでも行なっております。</p>
+            </div>
+            <div class="entry-list-item">
+                <img src="img/05_stepToStart_illustration02.png" alt="" class="entry-list-item__img">
+                <p class="entry-list-item__title">無料<wbr>カウンセリング</p>
+                <p class="entry-list-item__description">カウンセリングではプログラミングを勉強するメリットや、ご契約後の受講スケジュールについてお話しします。 受講方法や講義に関することなど、どんなに些細な質問でもお答えします！</p>
+            </div>
+            <div class="entry-list-item">
+                <img src="img/05_stepToStart_illustration03.png" alt="" class="entry-list-item__img">
+                <p class="entry-list-item__title">ご契約</p>
+                <p class="entry-list-item__description">ご契約後、入金の手続きが必要になります(クレジットカードの分割払いにも対応しております)</p>
+            </div>
+            <div class="entry-list-item">
+                <img src="img/05_stepToStart_illustration04.png" alt="" class="entry-list-item__img">
+                <p class="entry-list-item__title clear-after">受講開始</p>
+                <p class="entry-list-item__description clear-after">申し込んだ期の受講開始日よりオフラインでの集中講義が始まります。 月に6回の集中講義と100時間以上の自学習時間を義務化し、短期間でのスキルアップを目指します。</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="voice" id="voice">
+        <div class="voice__title">
+            <p>VOICE</p>
+            <h2>卒業生の声</h2>
+        </div>
+        <p class="voice__description">実際にCode Villageを卒業された方にリアルな声をお聞きしました！</p>
+        <div class="slide-container">
+            <div class="slide-item">
+                <div class="voice-content">
+                    <div class="voice-content__image student1"></div>
+                    <div class="voice-description">
+                        <h3 class="voice-description__heading">プログラミング技術を<br>持っていると有利</h3>
+                        <p class="voice-description__name">Y.Yさん</p>
+                        <p class="voice-description__content">
+                            どの言語を使えばどんなサービスが作りたいかの具体的なイメージがつく様になりました。現在一緒に起業している仲間と出会えた事は大きいです。
+                        </p>
+                        <a href="student2/index.html">もっと見る</a>
+                    </div>
+                </div>
+            </div>
+            <div class="slide-item">
+                <div class="voice-content">
+                    <div class="voice-content__image student2"></div>
+                    <div class="voice-description">
+                        <h3 class="voice-description__heading">解決できたときは<br>飛び上がるくらい嬉しい！</h3>
+                        <p class="voice-description__name">M.Mさん</p>
+                        <p class="voice-description__content">
+                            実践型であり参加型な授業スタイル、
+                            みんなと切磋琢磨出来る感じが成長につながったと思うし環境がとにかく良かった。
+                        </p>
+
+                        <a href="student1/index.html">もっと見る</a>
+                    </div>
+                </div>
+            </div>
+            <div class="slide-item">
+                <div class="voice-content">
+                    <div class="voice-content__image student3"></div>
+                    <div class="voice-description">
+                        <h3 class="voice-description__heading">卒業後も一緒に勉強できる<br>仲間ができた</h3>
+                        <p class="voice-description__name">R.Wさん</p>
+                        <p class="voice-description__content">
+                            分からないところも質問しやすくて解決しやすかった。自分のスキルレベルやペースに合わせて受講できたのが凄く良かった。                             
+                        </p>
+                        <a href="student3/index.html">もっと見る</a>
+                    </div>
+                </div>
+            </div>
+            <div class="slide-item">
+                <div class="voice-content">
+                    <div class="voice-content__image student4"></div>
+                    <div class="voice-description">
+                        <h3 class="voice-description__heading">公務員志望から<br>エンジニアへ！</h3>
+                        <p class="voice-description__name">D.Tさん</p>
+                        <p class="voice-description__content">
+                            自学習をしなければカリキュラムについていけないので危機感を持って取り組めました。相談しやすい人間関係も支えとなりました。                        </p>
+                        <a href="student4/index.html">もっと見る</a>
+                    </div>
+                </div>
+            </div>
+    </div>
+
+
+    </section>
+    <section class="tution" id="tution">
+        <img src="img/09_tution_bg_border.png" alt="">
+        <div class="tution__title">
+            <p>TUTION</p>
+            <h2>受講料について</h2>
+        </div>
+
+        <div class="tution-content__wrapper">
+            <p class="tution__description">3ヶ月(12週間)のプログラム</p>
+            <p class="tution-content__price">¥300,000<wbr><span>(税込)</span></p>
+            <p class="tution-content__aside">分割:クレジットカードによる分割</p>
+        </div>
+    </section>
+
+    <div class="reservation-btn__wrapper middle">
+        <div class="reservation-btn__bg"></div>
+        <a href="#contact" class="reservation-btn__main"></a>
+        <a href="#contact" class="reservation-btn__description">無料カウンセリングはこちら</a>    
+    </div>
+
+
+    <section class="faq" id="faq">
+        <div class="faq__title">
+            <p>FAQ</p>
+            <h2>よくあるご質問</h2>
+        </div>
+
+        <ul class="faq-list">
+            <li id="js-toggleAnswer1">
+                <p class="Q">Q</p>
+                <p class="test">自学習時間が確保出来ない場合はどうすればいいのでしょうか。</p>
+                <div class="plus">
+                    <span></span>
+                    <span></span>
+                </div>
+            </li>
+            <li class="answer" id="js-answer1">
+                他の日に多く自学習時間を確保できるよう努力しましょう。
+                質問システムを活用し、効率を意識しながら学習出来れば大丈夫です。
+            </li>
+            <li id="js-toggleAnswer2">
+                <p class="Q">Q</p>
+                <p>未経験でも大丈夫？</p>
+                <div class="plus">
+                    <span></span>
+                    <span></span>
+                </div>
+            </li>
+            <li class="answer" id="js-answer2">
+                未経験者(初学者)に対応したカリキュラムになっておりますのでご安心ください。
+            </li>
+            <li id="js-toggleAnswer3">
+                <p class="Q">Q</p>
+                <p>就職/転職先は紹介してくれる？(キャリア的なサポートは？)</p>
+                <div class="plus">
+                    <span></span>
+                    <span></span>
+                </div>    
+            </li>
+            <li class="answer" id="js-answer3">ご要望であれば各自のキャリアパスに合わせてアドバイスをさせて頂いております。</li>
+        </ul>
+    </section>
+
+    <section class="osaka">
+        <div class="balloon">
+            <h2>大阪 梅田に<wbr>Code Village Career開校！</h2>
+        </div>
+        <p class="osaka__description">
+            Code Villageはキャリアに特化した<span>Code Village Career</span>を大阪 梅田にて開講致します。 HR領域に特化した<span>株式会社NEWGATEとの提携</span>により、お客様により<span>最適且つ具体的なキャリアプラン</span>を提供する事を目指しております。
+        </p>
+        <div class="osaka-detail">
+            <div class="osaka-detail__map"></div>
+            <div class="osaka-detail__table">
+                <p class="osaka-detail__table__head">料金</p>
+                <p class="osaka-detail__table__item">¥400,000</p>
+                <p class="osaka-detail__table__head">支払い方法</p>
+                <p class="osaka-detail__table__item">東京池袋校同様</p>
+                <p class="osaka-detail__table__annotation">※カリキュラムは東京池袋校と同様となります。</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="access" id="access">
+        <div class="access__title">
+            <p>ACCESS</p>
+            <h2>アクセス</h2>
+        </div>
+        <div class="access-content">
+            <div class="access-content__map"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1674.1656357884394!2d139.71666485428523!3d35.72667381769806!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188d6eac34b7bd%3A0x306bf9654e7915b9!2z44CSMTcxLTAwMjIg5p2x5Lqs6YO96LGK5bO25Yy65Y2X5rGg6KKL77yS5LiB55uu77yU77yW!5e0!3m2!1sja!2sjp!4v1554271665448!5m2!1sja!2sjp" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe></div>
+            <div class="access-content__description">
+                <p class="subname">Code Village</p>
+                <p class="name">東京池袋校</p>
+                <p class="address">〒171-0022<br>東京都豊島区南池袋２丁目４６ シャトードゥヴァンベール 102</p>
+                <p class="walk">※JR線「池袋駅」から徒歩10分</p>
+            </div>
+        </div>
+        <div class="access-content">
+            <div class="access-content__map"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3279.9783822318627!2d135.50212481473454!3d34.70572519045781!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6000e695a98b7f61%3A0xe8dfaacf8330367e!2z44CSNTMwLTAwMjgg5aSn6Ziq5bqc5aSn6Ziq5biC5YyX5Yy65LiH5q2z55S677yU4oiS77yR77ySIOa1qumAn-ODk-ODqw!5e0!3m2!1sja!2sjp!4v1554275164499!5m2!1sja!2sjp" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe></div>
+            <div class="access-content__description">
+                <p class="subname">Code Village Career</p>
+                <p class="name">大阪梅田校</p>
+                <p class="address">〒530-0028<br>大阪府大阪市北区万歳町4-12 浪速ビル606C</p>
+                <p class="walk"></p>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <div class="contact__title">
+            <p>FORM</p>
+            <h2>カウンセリングお申込み</h2>
+        </div>
+        <form action="./contact.php" name="contact" method="POST">
+            <table>
+                <tr class="name">
+                    <th><label for="name">お名前(フルネーム)</label></th>
+                    <td class="required true">必須</td>
+                    <td><input type="text" id="name" name="name"></td>
+                </tr>
+                <tr class="age">
+                    <th><label for="age">年齢</label></th>
+                    <td class="required false">任意</td>
+                    <td><input type="text" id="age" name="age"></td>
+                </tr>
+                <tr class="address">
+                    <th><label for="address">お住まい</label></th>
+                    <td class="required false">任意</td>
+                    <td><input type="text" id="address" name="address"></td>
+                    
+                </tr>
+                <tr class="phone">
+                    <th><label for="name">電話番号</label></th>
+                    <td class="required true">必須</td>
+                    <td><input type="text" id="name" name="phone"></td>
+                </tr>
+                <tr class="email">
+                    <th><label for="email">メールアドレス</label></th>
+                    <td class="required true">必須</td>
+                    <td><input type="email" id="email" name="email"></td>
+                </tr>
+                <tr class="venue">
+                    <th><label for="venue">カウンセリング<wbr>希望校</label></th>
+                    <td class="required true">必須</td>
+                    <td class="school-choose">
+                        <input type="radio" name="venue" value="東京池袋校" checked>東京池袋校
+                        <input type="radio" name="venue" value="大阪梅田校">大阪梅田校    
+                    </td>
+                </tr>
+                <tr class="date">
+                    <th><label for="date">希望日程</label></th>
+                    <td class="required true">必須</td>
+                    <td>
+                        <input type="text" name="date" id="chooseDate">
+                    </td>
+                </tr>
+                <tr class="content">
+                    <th><label for="content">お問い合わせ内容</label></th>
+                    <td class="required false middle">任意</td>
+                    <td><textarea id="content" name="content" cols="70" rows="20"></textarea></td>
+                </tr>
+                <tr>
+                    <th></th>
+                    <td></td>
+                    <td class="checkbox"><input type="checkbox"><a href="./privacy_policy.html">プライバシーポリシー</a>に同意します</td>
+                </tr>
+            </table>
+            <div class="reservation-btn__wrapper">
+                <div class="reservation-btn__bg"></div>
+                <a href="" id="js-validate1" class="reservation-btn__main"></a>
+                <a href="" id="js-validate2" class="reservation-btn__description">上記の内容で申し込む</a>    
+            </div>
+        </form>
+    </section>
+
+    <footer>
+        <div class="footer-list footer-list-wrap">
+            <ul>
+                <li><a href="#about">特徴</a></li>
+                <li><a href="#flow">講義</a></li>
+                <li><a href="#curriculum">カリキュラム</a></li>
+                <li><a href="#entry">入校までの流れ</a></li>
+                <li><a href="#voice">生徒の声</a></li>
+                <li><a href="#faq">よくあるご質問</a></li>
+                <li><a href="#tution">受講料</a></li>
+                <li><a href="#contact">お問い合わせ</a></li>
+            </ul>
+            <ul>
+                <li><a href="#access">東京池袋校</a></li>
+                <li><a href="#access">大阪梅田校</a></li>
+            </ul>
+            <div class="footer-list__icon">
+                <i class="fab fa-twitter-square"></i>
+                <i class="fab fa-facebook-square"></i>
+            </div>
+        </div>
+        <div class="footer-logo">
+            <ul class="privacies">
+                <li><a href="./SCT">特定商取引法に基づく表記</a></li>
+                <li><a href="./privacy_policy">プライバシーポリシー</a></li>
+            </ul>
+            <p>permil.inc</p>
+        </div>
+    </footer>
+
+</div>
+
+<script type="text/javascript" src="slick/slick.min.js"></script>
+<script>
+    document.addEventListener('DOMContentLoaded' , function(){
+        $("#chooseDate").flatpickr({
+            enableTime: true,
+            dateFormat: "Y-m-d H:i",
+        });
+        $('.slide-container').slick({
+            centerMode: true,
+            arrow: true,
+            infinite: true,
+            centerPadding: '0px',
+            slidesToShow: 3,
+            responsive: [
+            {
+                breakpoint: 980,
+                settings: {
+                    arrows: true,
+                    centerMode: true,
+                    centerPadding: '0px',
+                    slidesToShow: 3
+                }
+            },
+            {
+                breakpoint: 600,
+                settings: {
+                    arrows: true,
+                    centerMode: false,
+                    centerPadding: '0px',
+                    slidesToShow: 1
+                }
+            },
+            ]
+        })
+    });
+</script>
+<script src="index.js"></script>
+</body>
+</html>

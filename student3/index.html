@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CodeVillage</title>
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link href="https://fonts.googleapis.com/css?family=Khula" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">    
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/object-fit-images/3.2.3/ofi.js"></script>
+</head>
+<body>
+<nav class="sp" id="js-navMenu">
+    <a class="menu-close-trigger js-menuCloseTrigger">
+        <span></span>
+        <span></span>
+    </a>
+    <ul>
+        <li><a href="#about" class="js-menuCloseTrigger"></a>CodeVillageとは</li>
+        <li><a href="#curriculum" class="js-menuCloseTrigger"></a>カリキュラム</li>
+        <li><a href="#entry" class="js-menuCloseTrigger"></a>受講について</li>
+        <li><a href="#tution" class="js-menuCloseTrigger"></a>料金</li>
+        <li class="reservation"><a href="#contact" id="js-menuCloseTrigger" class="js-menuCloseTrigger"></a>無料カウンセリングを予約する</li>
+    </ul>
+</nav>
+<div class="wrapper">
+    <header>
+        <h1><a href="#">Code Village</a></h1>
+        <a class="menu-trigger tab" id="js-menuTrigger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </a>              
+        <nav class="pc">
+            <ul>
+                <li><a href="#about">CodeVillageとは</a></li>
+                <li><a href="#curriculum">カリキュラム</a></li>
+                <li><a href="#entry">受講について</a></li>
+                <li><a href="#tution">料金</a></li>
+                <a href="#contact"><li class="reservation">無料カウンセリングを予約する</li></a>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="student-voice">
+        <img src="../img/student3.png" alt="">
+        <p class="name">R.Wさん(21歳 大学生)</p>
+
+        <p class="question">Q. なぜプログラミングに興味を持ったんですか？</p>
+        <p class="answer">
+            商業高校に通っていて簿記かパソコンの授業を選択しなければいけなくて、パソコンの授業を選んだんです。<br>
+            大学に進学してからも軽くプログラミングの授業を受けて、本格的に勉強してみたくなりました。</p>
+
+        <p class="question">Q. コツコツとした作業が好きなんですか？</p>
+        <p class="answer">
+            好きです。
+            ジグソーパズルとかが好きです。
+            今でもアプリのゲームとかでやってます（笑）。
+        </p>
+
+        <p class="question">Q. システムやサービスを生み出すのは好きですか？</p>
+        <p class="answer">達成感を感じられるので好きですね。</p>
+
+        <p class="question">Q. プログラミングの好きなところはどんなところですか？</p>
+        <p class="answer">コードを書いて、ちゃんと動いた時に楽しいし嬉しいです。</p>
+
+        <p class="question">Q. 他のプログラミングスクールと比較しましたか？</p>
+        <p class="answer">ほとんどしてないです。</p>
+
+        <p class="question">Q. Code Villageを選んだ理由はなんですか？</p>
+        <p class="answer">スパルタ教育なところがちゃんと自分自身に強制的に自学習を課せられると思い即決しました。<br>最終的にサイト作成など、目標も立てて挑みました。</p>
+
+        <p class="question">Q. 授業の雰囲気はどうでしたか？</p>
+        <p class="answer">
+            楽しく受けることができました。<br>
+            しっかり教えてくれて、凄く分かりやすかったですし、分からないところも質問しやすくて解決しやすかったと思います。<br>
+            途中からレベル別に分けての授業になったりと、自分のスキルレベルやペースに合わせて受講できたのが凄く良かったです。<br>
+            みんなで授業外で集まって勉強会などを開いたり出来た点もよかったです。
+        </p>
+
+        <p class="question">Q. 講師はどうでしたか？</p>
+        <p class="answer">真剣に向き合ってくれて分かりやすかったですし、ユーモアもあって面白かったので楽しく受講できました。</p>
+    
+        <p class="question">Q. カリキュラムの内容やレベルはどうでしたか？</p>
+        <p class="answer">僕は大学で少しやっていたので、最初の頃は復習感覚でしたけど、途中からはレベルが高くなってきて、自学習への意欲にも繋がりました。</p>
+    
+        <p class="question">Q. どのくらいのレベルまで出来るようになりましたか？</p>
+        <p class="answer">3月末くらいからサイト作成をしています。就活用の自分のHP作成中でスマホ版はほぼ完成しました。ワードプレスは本を買って独学でしたが、他は授業で受けた言語を使用して作成しています。</p>
+    
+        <p class="question">Q. 自学習時間の確保は大変ではありませんでしたか？</p>
+        <p class="answer">計画的に確保していたのでそこまで大変ではありませんでした。</p>
+   
+        <p class="question">Q. 働いていて自学習時間が取れない人にとっては難しいカリキュラムだったと思いますか？</p>
+        <p class="answer">ちょっと大変かもしれないですが、本人のやる気次第で確保できると思います。</p>
+
+        <p class="question">Q. 苦労した点はありますか？</p>
+        <p class="answer">最後の方は難しくて、スパルタ感を実感しましたね(笑)。でも、気合いで頑張って乗り越えられました。</p>
+
+        <p class="question">Q. Code Villageならではの魅力はどんなところだと感じましたか？</p>
+        <p class="answer">短期集中的に受講出来たところと、途中からレベル別になっていったのが本当によかったです。</p>
+
+        <p class="question">Q. Code Villageに通って得たこと(技術以外で)はありますか？</p>
+        <p class="answer">卒業後も一緒に勉強できる仲間ができた事もよかったです。<br>後は、すぐ質問するのではなく、出来る限り自分で調べる力が身についたと思います。</p>
+
+        <p class="question">Q. 挫折しそうになったことがありますか？</p>
+        <p class="answer">ありません。どれだけ難しくても、やる気でカバーしました。<br>調べても分からないところは質問させてもらっていたので大丈夫でした。</p>
+
+        <p class="question">Q. どのくらい自学習しましたか？</p>
+        <p class="answer">授業の日の授業前に集中的に時間を作るようにして、他の日も夜やっていました。<br>忙しくても必ず毎日パソコンを開く習慣をつけていました。<br>平均すると1日に2時間ですが、多い日は5時間くらいは自学習していました。</p>
+
+        <p class="question">Q. これからのキャリアについてどのように考えていますか？</p>
+        <p class="answer">今、就活中でIT企業に就職するつもりです。システム開発に拘ってはいませんが、休日を利用してシステムやサービスを開発したいと思っています。</p>
+    
+        <p class="question">Q. これからプログラミングを勉強しようとしている人に一言ください。</p>
+        <p class="answer">パソコンに苦手意識を持っている人でも出来るようになるからそんなに難しく考えなくても大丈夫だと伝えたいです。でもやる気と自学習は絶対必要なので、覚悟は必要です。</p>
+
+    </section>
+
+    <footer>
+        <div class="footer-list footer-list-wrap">
+            <ul>
+                <li><a href="#about">特徴</a></li>
+                <li><a href="#flow">講義</a></li>
+                <li><a href="#curriculum">カリキュラム</a></li>
+                <li><a href="#entry">入校までの流れ</a></li>
+                <li><a href="#voice">生徒の声</a></li>
+                <li><a href="#faq">よくあるご質問</a></li>
+                <li><a href="#tution">受講料</a></li>
+                <li><a href="#contact">お問い合わせ</a></li>
+            </ul>
+            <ul>
+                <li><a href="#access">東京池袋校</a></li>
+                <li><a href="#access">大阪梅田校</a></li>
+            </ul>
+            <div class="footer-list__icon">
+                <i class="fab fa-twitter-square"></i>
+                <i class="fab fa-facebook-square"></i>
+            </div>
+        </div>
+        <div class="footer-logo">
+            <ul class="privacies">
+                <li><a href="./SCT">特定商取引法に基づく表記</a></li>
+                <li><a href="./privacy_policy">プライバシーポリシー</a></li>
+            </ul>
+            <p>permil.inc</p>
+        </div>
+    </footer>
+
+</div>
+
+<script>
+    objectFitImages();
+</script>
+<script src="../index.js"></script>
+</body>
+</html>
