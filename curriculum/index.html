@@ -226,6 +226,56 @@
             </div>
         </section>
     </section>
+    <section class="contact" id="contact">
+        <div class="contact__title">
+            <p>Pre-challange</p>
+            <h2>事前課題ダウンロード</h2>
+        </div>
+        <p class="contact__description">
+            以下のアンケートにご回答ください。<br>
+            ご回答後、ダウンロードボタンをクリックすると、事前課題の第1回、第2回を無料でダウンロードできます。
+        </p>
+        <form action="./contact.php" name="contact" method="POST">
+            <table>
+                <tr class="name">
+                    <th><label for="name">お名前(フルネーム)</label></th>
+                    <td class="required true">必須</td>
+                    <td><input type="text" id="name" name="name"></td>
+                </tr>
+                <tr class="age">
+                    <th><label for="age">年齢</label></th>
+                    <td class="required false">任意</td>
+                    <td><input type="text" id="age" name="age"></td>
+                </tr>
+                <tr class="address">
+                    <th><label for="address">お住まい</label></th>
+                    <td class="required false">任意</td>
+                    <td><input type="text" id="address" name="address"></td>
+                </tr>
+                <tr class="email">
+                    <th><label for="email">メールアドレス</label></th>
+                    <td class="required true">必須</td>
+                    <td><input type="email" id="email" name="email"></td>
+                </tr>
+                <tr>
+                    <th>このサイトに訪れた目的</th>
+                    <td class="required true">必須</td>
+                    <td><input type="text"></td>
+                </tr>
+                <tr>
+                    <th></th>
+                    <td></td>
+                    <td class="checkbox"><input type="checkbox"><a href="./privacy_policy.html">プライバシーポリシー</a>に同意します</td>
+                </tr>
+            </table>
+            <div class="reservation-btn__wrapper">
+                <div class="reservation-btn__bg"></div>
+                <a href="" id="js-validate1" class="reservation-btn__main"></a>
+                <a href="" id="js-validate2" class="reservation-btn__description">ダウンロード</a>    
+            </div>
+        </form>
+    </section>
+    
     <footer>
         <div class="footer-list footer-list-wrap">
             <ul>
@@ -252,7 +302,7 @@
                 <li><a href="../SCT">特定商取引法に基づく表記</a></li>
                 <li><a href="../privacy_policy">プライバシーポリシー</a></li>
             </ul>
-            <p>permil.inc</p>
+            <p>permil inc.</p>
         </div>
     </footer>
     </div>

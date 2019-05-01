@@ -1,4 +1,4 @@
-// import './css/reset.scss';
+--// import './css/reset.scss';
 // import './css/main.scss';
 // import './index.html';
 // import flatpickr from "flatpickr";

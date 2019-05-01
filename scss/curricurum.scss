@@ -33,7 +33,7 @@ body {
 
 
 // section共通部分
-.curri {
+.curri, .contact {
     padding: $sec-padding;
     @include tab {
         padding: $sec-padding-sp;
@@ -493,5 +493,219 @@ body.is-menu-open {
     .wrapper {
         filter: blur(8px);
         transition: all .5s ease-out;
+    }
+}
+
+.reservation-btn {
+    &__wrapper {
+        position: relative;
+        bottom: -500px;
+        width: 40vw;
+        box-sizing: border-box;
+        left: 2%;
+        height: 70px;
+        @include tab {
+            width: 60%;
+            margin: 50px 0;
+            top: 70%;
+            left: 50%;
+            transform: translateX(-50%);        
+            z-index: 5;
+        }
+        @include sp {
+            width: 80%;
+            left: 50%;
+            font-size: 13px;
+            white-space: nowrap;
+        }
+        &:hover {
+            & .reservation-btn__main {
+                transform: scaleX(1.1) scaleY(1.2);
+            }
+            & .reservation-btn__bg {
+                transform: scale(0.95);
+            }
+        }
+    }
+    &__bg {
+        transition: all 1s 0s cubic-bezier(0.175, 0.885, 0.32, 1.275); 
+        opacity: 0.5;
+        position: absolute;
+        width: 100%;
+        border-radius: 3em;
+        height: 100%;
+        background-color: #FF2757;
+        z-index: 5;
+        left: 0;
+        animation: btn 1s 0s infinite alternate none cubic-bezier(0.175, 0.885, 0.32, 1.275);
+
+    }
+    &__main {
+        transition: all 1s 0s cubic-bezier(0.175, 0.885, 0.32, 1.275); 
+        display: inline-block;
+        z-index: 6;
+        width: 90%;
+        height: 80%;
+        background-color: #FF2757;
+        text-decoration: none;
+        position: absolute;
+        border-radius: 3em;
+        top: 10%;
+        left: 5%;
+        text-align: center;
+        box-sizing: border-box;
+    }
+    &__description {
+        text-align: center;
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 7;
+        color: white;
+        line-height: 1em;
+        display: block;
+        text-decoration: none;
+        font-weight: bold;
+        word-break : break-all;
+        @include tab {
+            width: 80%;
+            left: 50%;
+        }
+        
+        &::after {
+            content: "";
+            border: 6px solid transparent;
+            border-left: 10px solid #fff;
+            width: 0;
+            height: 0;
+            margin-left: 5px;
+            position: absolute;
+            right: -20px;
+            top: -1px;
+            display: inline-block;
+            @include tab {
+                right: unset;
+            }
+        }
+        span {
+            font-size: 10px;
+            vertical-align: middle;
+            margin-right: 5px;
+            @include tab {
+                display: none;
+            }
+        }
+    }
+}
+
+
+.contact {
+    padding-top: 0;
+    .reservation-btn__wrapper {
+        bottom: -50px!important;
+        @include tab {
+            bottom: 0!important;
+        }
+        left: 50%;
+        transform: translateX(-50%);
+        .reservation-btn__description {
+            text-align: center;
+            width: 80%;
+            line-height: 19px;
+            &::after {
+                display: none;
+            }
+        } 
+    }
+    .reservation-btn__description {
+        left: 50%;
+    }
+    form {
+        width: 100%;
+
+        input, textarea {
+            width: 100%;
+            height: 30px;
+            margin: 5px;
+            border-radius: 10px;
+            border: 2px solid #EFEFEF;
+            padding: 0 8px;
+            &[type="textarea"] {
+                height: 300px;
+            }
+            &[type="checkbox"] {
+                width: auto;
+            }
+            @include sp {
+                box-sizing: border-box;
+            }
+        }
+        textarea {
+            min-height: 300px;
+            resize: none;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: separate;
+            border-spacing: 4px 10px;        
+        }
+
+        th {
+            text-align: left;            
+        }
+
+        tr {
+            margin-bottom: 3px;
+            // height: 50px;
+            @include sp {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: space-between;
+            }
+            & td:last-child {
+                @include sp {
+                    width: 100%;
+                }
+            }
+        }
+        td {
+            text-align: left;
+        }
+
+        td.required {
+            color: white;
+            display: inline-block;
+            padding: 2px;
+            font-size: 14px;
+            height: 20px;
+            vertical-align: middle;
+
+            &.true {
+                background-color: red;
+            }
+            &.false {
+                background-color: #D6DEE3;
+            }
+        }
+        td.checkbox {
+            display: flex;
+            align-items: center;
+        }
+        @include sp {
+            td.school-choose {
+                display: flex;
+                align-items: center;
+                input[type="radio"] {
+                    width: 20px;
+                    &:not(:first-child) {
+                        margin-left: 30px;
+                    }
+                }
+            }
+
+        }
     }
 }

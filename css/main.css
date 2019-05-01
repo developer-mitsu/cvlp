@@ -370,21 +370,21 @@ body.is-menu-open .wrapper {
     line-height: 19px; }
 
 .about, .flow, .faq, .access, .form,
-.curriculum, .entry, .voice, .contact, .tution, .contact-sended, .student-voice {
+.curriculum, .entry, .voice, .contact, .tution, .contact-sended, .student-voice, #access, #contact, .pretask {
   padding: 150px 15%; }
   @media (max-width: 968px) {
     .about, .flow, .faq, .access, .form,
-    .curriculum, .entry, .voice, .contact, .tution, .contact-sended, .student-voice {
+    .curriculum, .entry, .voice, .contact, .tution, .contact-sended, .student-voice, #access, #contact, .pretask {
       padding: 100px 8%; } }
   .about__title, .flow__title, .faq__title, .access__title, .form__title,
-  .curriculum__title, .entry__title, .voice__title, .contact__title, .tution__title, .contact-sended__title, .student-voice__title {
+  .curriculum__title, .entry__title, .voice__title, .contact__title, .tution__title, .contact-sended__title, .student-voice__title, #access__title, #contact__title, .pretask__title {
     text-align: center; }
     .about__title p, .flow__title p, .faq__title p, .access__title p, .form__title p,
-    .curriculum__title p, .entry__title p, .voice__title p, .contact__title p, .tution__title p, .contact-sended__title p, .student-voice__title p {
+    .curriculum__title p, .entry__title p, .voice__title p, .contact__title p, .tution__title p, .contact-sended__title p, .student-voice__title p, #access__title p, #contact__title p, .pretask__title p {
       font-size: 14px;
       font-weight: bold; }
     .about__title p::after, .flow__title p::after, .faq__title p::after, .access__title p::after, .form__title p::after,
-    .curriculum__title p::after, .entry__title p::after, .voice__title p::after, .contact__title p::after, .tution__title p::after, .contact-sended__title p::after, .student-voice__title p::after {
+    .curriculum__title p::after, .entry__title p::after, .voice__title p::after, .contact__title p::after, .tution__title p::after, .contact-sended__title p::after, .student-voice__title p::after, #access__title p::after, #contact__title p::after, .pretask__title p::after {
       display: block;
       border-bottom: 2px solid #1E4159;
       content: "";
@@ -392,15 +392,15 @@ body.is-menu-open .wrapper {
       padding: 0;
       width: 50px; }
     .about__title h2, .flow__title h2, .faq__title h2, .access__title h2, .form__title h2,
-    .curriculum__title h2, .entry__title h2, .voice__title h2, .contact__title h2, .tution__title h2, .contact-sended__title h2, .student-voice__title h2 {
+    .curriculum__title h2, .entry__title h2, .voice__title h2, .contact__title h2, .tution__title h2, .contact-sended__title h2, .student-voice__title h2, #access__title h2, #contact__title h2, .pretask__title h2 {
       font-size: 30px;
       margin-bottom: 50px; }
       @media (max-width: 968px) {
         .about__title h2, .flow__title h2, .faq__title h2, .access__title h2, .form__title h2,
-        .curriculum__title h2, .entry__title h2, .voice__title h2, .contact__title h2, .tution__title h2, .contact-sended__title h2, .student-voice__title h2 {
+        .curriculum__title h2, .entry__title h2, .voice__title h2, .contact__title h2, .tution__title h2, .contact-sended__title h2, .student-voice__title h2, #access__title h2, #contact__title h2, .pretask__title h2 {
           font-size: 25px; } }
   .about__description, .flow__description, .faq__description, .access__description, .form__description,
-  .curriculum__description, .entry__description, .voice__description, .contact__description, .tution__description, .contact-sended__description, .student-voice__description {
+  .curriculum__description, .entry__description, .voice__description, .contact__description, .tution__description, .contact-sended__description, .student-voice__description, #access__description, #contact__description, .pretask__description {
     text-align: center; }
 
 .about p {
@@ -1041,11 +1041,7 @@ body.is-menu-open .wrapper {
       border-collapse: separate;
       border-spacing: 4px 10px; }
     .contact form th {
-      text-align-last: left;
-      width: 150px; }
-      @media (max-width: 600px) {
-        .contact form th {
-          margin-right: 40%; } }
+      text-align: left; }
     .contact form tr {
       margin-bottom: 3px; }
       @media (max-width: 600px) {
@@ -1061,9 +1057,11 @@ body.is-menu-open .wrapper {
       text-align: left; }
     .contact form td.required {
       color: white;
-      display: inline;
+      display: inline-block;
       padding: 2px;
-      font-size: 14px; }
+      font-size: 14px;
+      height: 20px;
+      vertical-align: middle; }
       .contact form td.required.true {
         background-color: red; }
       .contact form td.required.false {
@@ -1286,5 +1284,18 @@ tr.content th {
 
 .slide-item:not(.slick-center) {
   transform: scale(0.9); }
+
+#pretask {
+  background-color: #fafbfc; }
+  #pretask video {
+    width: 60%;
+    display: block;
+    margin: 30px auto; }
+  #pretask .reservation-btn__wrapper {
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%); }
+  #pretask .reservation-btn__description {
+    width: 100%; }
 
 /*# sourceMappingURL=main.css.map */

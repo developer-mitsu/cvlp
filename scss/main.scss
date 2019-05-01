@@ -470,8 +470,8 @@ body.is-menu-open {
 
 
 // section共通部分
-.about, .flow, .faq, .access, .form,
-.curriculum, .entry, .voice, .contact, .tution, .contact-sended, .student-voice {
+.about, .flow, .faq ,  .access, .form,
+.curriculum, .entry, .voice, .contact, .tution, .contact-sended, .student-voice, #access, #contact, .pretask {
     padding: $sec-padding;
     @include tab {
         padding: $sec-padding-sp;
@@ -1307,11 +1307,7 @@ body.is-menu-open {
         }
 
         th {
-            text-align-last: left;
-            width: 150px;
-            @include sp {
-                margin-right: 40%;
-            }
+            text-align: left;
         }
 
         tr {
@@ -1335,9 +1331,11 @@ body.is-menu-open {
 
         td.required {
             color: white;
-            display: inline;
+            display: inline-block;
             padding: 2px;
             font-size: 14px;
+            height: 20px;
+            vertical-align: middle;
 
             &.true {
                 background-color: red;
@@ -1634,6 +1632,22 @@ tr.content {
     transform: scale(0.9);
 }
 
+#pretask {
+    background-color: #fafbfc;
 
+    video {
+        width: 60%;
+        display: block;
+        margin: 30px auto;
+    }
 
+    .reservation-btn__wrapper {
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+    }
 
+    .reservation-btn__description {
+        width: 100%;
+    }
+}
