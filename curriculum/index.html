@@ -233,7 +233,7 @@
         </div>
         <p class="contact__description">
             以下のアンケートにご回答ください。<br>
-            ご回答後、ダウンロードボタンをクリックすると、事前課題の第1回、第2回を無料でダウンロードできます。
+            ご回答後、ダウンロードボタンをクリックすると、事前課題の第1回「HTML基礎」、第2回「CSS基礎」を無料でダウンロードできます。
         </p>
         <form action="./contact.php" name="contact" method="POST">
             <table>
@@ -258,9 +258,18 @@
                     <td><input type="email" id="email" name="email"></td>
                 </tr>
                 <tr>
-                    <th>このサイトに訪れた目的</th>
+                    <th>ダウンロードの目的</th>
                     <td class="required true">必須</td>
-                    <td><input type="text"></td>
+                    <td>
+                        <select required>
+                            <option value="" hidden>選択してください。</option>
+                            <option value="プログラミングに興味がある">プログラミングに興味がある</option>
+                            <option value="プログラミングを勉強している">プログラミングを勉強している</option>
+                            <option value="教室を検討している">教室を検討している</option>
+                            <option value="プログラミング学習に挫折しそう">プログラミング学習に挫折しそう</option>
+                            <option value="その他">その他</option>
+                        </select>
+                    </td>
                 </tr>
                 <tr>
                     <th></th>

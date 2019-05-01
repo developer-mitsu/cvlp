@@ -483,19 +483,19 @@ body.is-menu-open .wrapper {
     left: 50%; }
   .contact form {
     width: 100%; }
-    .contact form input, .contact form textarea {
+    .contact form input, .contact form textarea, .contact form select {
       width: 100%;
       height: 30px;
       margin: 5px;
       border-radius: 10px;
       border: 2px solid #EFEFEF;
       padding: 0 8px; }
-      .contact form input[type="textarea"], .contact form textarea[type="textarea"] {
+      .contact form input[type="textarea"], .contact form textarea[type="textarea"], .contact form select[type="textarea"] {
         height: 300px; }
-      .contact form input[type="checkbox"], .contact form textarea[type="checkbox"] {
+      .contact form input[type="checkbox"], .contact form textarea[type="checkbox"], .contact form select[type="checkbox"] {
         width: auto; }
       @media (max-width: 600px) {
-        .contact form input, .contact form textarea {
+        .contact form input, .contact form textarea, .contact form select {
           box-sizing: border-box; } }
     .contact form textarea {
       min-height: 300px;
