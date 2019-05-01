@@ -11,6 +11,12 @@ body {
 .clear-after::after {
   display: none !important; }
 
+.sp_only {
+  display: none; }
+  @media (max-width: 600px) {
+    .sp_only {
+      display: block; } }
+
 .tab {
   display: none; }
   @media (max-width: 968px) {

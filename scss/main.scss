@@ -41,6 +41,13 @@ body {
     }      
 }
 
+.sp_only {
+    display: none;
+    @include sp {
+        display: block;
+    }
+}
+
 .tab {
     display: none;
     @include tab {
