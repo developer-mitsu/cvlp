@@ -273,7 +273,7 @@
                             <option value="プログラミング学習に挫折しそう">プログラミング学習に挫折しそう</option>
                             <option value="その他">その他</option>
                         </select>
-                        <textarea id="js-area" name="other-opinion" class="close-area"></textarea>
+                        <textarea id="js-area" name="other-opinion" class="close-area" placeholder="目的を書いてください。"></textarea>
                     </td>
                 </tr>
                 <tr>
@@ -322,11 +322,14 @@
     </div>
     <script>
         var goal = document.getElementById('js-goal');
+        var op_t = document.getElementById('js-area');
         goal.onchange = function(){
              var selectedItem = this.options[this.selectedIndex];
              if(selectedItem.value === "その他") {
-                 var op_t = document.getElementById('js-area');
                  op_t.classList.toggle('close-area');
+             }
+             else {
+                op_t.classList.add('close-area');
              }
         }
     </script>

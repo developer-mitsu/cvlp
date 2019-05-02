@@ -500,6 +500,8 @@ body.is-menu-open .wrapper {
     .contact form textarea {
       min-height: 300px;
       resize: none; }
+      .contact form textarea#js-area {
+        padding-top: 1em; }
       .contact form textarea.close-area {
         display: none; }
     .contact form table {
