@@ -644,6 +644,9 @@ body.is-menu-open {
         textarea {
             min-height: 300px;
             resize: none;
+            &#js-area {
+                padding-top: 1em;
+            }
             &.close-area {
                 display: none;
             }
