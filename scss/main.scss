@@ -194,7 +194,10 @@ nav {
                         border-top: #edf4ff 1px solid;
                     }
                     &:not(:last-child){
-                        padding: 20px;
+                        padding: 22px 20px;
+                    }
+                    p {
+                        height: 19px;
                     }
 
                     a {

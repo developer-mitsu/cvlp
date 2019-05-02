@@ -150,7 +150,9 @@ nav.sp {
             margin-top: 50px;
             border-top: #edf4ff 1px solid; }
           nav.sp ul li:not(:last-child) {
-            padding: 20px; }
+            padding: 22px 20px; }
+          nav.sp ul li p {
+            height: 19px; }
           nav.sp ul li a {
             display: block;
             position: absolute;
