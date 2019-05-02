@@ -500,6 +500,8 @@ body.is-menu-open .wrapper {
     .contact form textarea {
       min-height: 300px;
       resize: none; }
+      .contact form textarea.close-area {
+        display: none; }
     .contact form table {
       width: 100%;
       border-collapse: separate;
