@@ -9,7 +9,6 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">    
     <link rel="stylesheet" href="../css/reset.css">
     <link rel="stylesheet" href="../css/curricurum.css">
-    <title>Document</title>
 </head>
 <body>
     <nav class="sp" id="js-navMenu">
@@ -266,7 +265,7 @@
                     <th>ダウンロードの目的</th>
                     <td class="required true">必須</td>
                     <td>
-                        <select required>
+                        <select class="sample" id="js-goal" required>
                             <option value="" hidden>選択してください。</option>
                             <option value="プログラミングに興味がある">プログラミングに興味がある</option>
                             <option value="プログラミングを勉強している">プログラミングを勉強している</option>
@@ -274,6 +273,7 @@
                             <option value="プログラミング学習に挫折しそう">プログラミング学習に挫折しそう</option>
                             <option value="その他">その他</option>
                         </select>
+                        <textarea id="js-area" name="other-opinion" class="close-area"></textarea>
                     </td>
                 </tr>
                 <tr>
@@ -320,6 +320,16 @@
         </div>
     </footer>
     </div>
+    <script>
+        var goal = document.getElementById('js-goal');
+        goal.onchange = function(){
+             var selectedItem = this.options[this.selectedIndex];
+             if(selectedItem.value === "その他") {
+                 var op_t = document.getElementById('js-area');
+                 op_t.classList.toggle('close-area');
+             }
+        }
+    </script>
     <script src="../index.js"></script>
 </body>
 </html>
