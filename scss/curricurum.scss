@@ -22,6 +22,10 @@ $sp: 600px;
         @content;
     }
 }
+
+* {
+    box-sizing: border-box;
+}
 body {
     font-family: 'Khula';
 
@@ -29,6 +33,7 @@ body {
     font-size: $base-fsz;
     line-height: $base-line-height;
     width: 100%;
+
 }
 
 
