@@ -279,13 +279,13 @@
                 <tr>
                     <th></th>
                     <td></td>
-                    <td class="checkbox"><input type="checkbox"><a href="./privacy_policy.html">プライバシーポリシー</a>に同意します</td>
+                    <td class="checkbox"><input type="checkbox" id="privacy"><a href="./privacy_policy.html">プライバシーポリシー</a>に同意します</td>
                 </tr>
             </table>
             <div class="reservation-btn__wrapper">
                 <div class="reservation-btn__bg"></div>
-                <a href="javascript:download.submit();" id="js-validate1" class="reservation-btn__main"></a>
-                <a href="javascript:download.submit();" id="js-validate2" class="reservation-btn__description">ダウンロード</a>    
+                <a onclick="toDownload()" id="js-validate1" class="reservation-btn__main"></a>
+                <a onclick="toDownload()" id="js-validate2" class="reservation-btn__description">ダウンロード</a>    
             </div>
         </form>
     </section>
@@ -331,6 +331,31 @@
              else {
                 op_t.classList.add('close-area');
              }
+        }
+        function toDownload() {
+
+            var requiredObjects = [
+                {object: document.getElementById('name'), isValid: false},
+                {object: document.getElementById('email'), isValid: false},
+                {object: document.getElementById('phone'), isValid: false},
+                {object: document.getElementById('js-goal'), isValid: false}
+            ]
+
+            var lastNumOfObjects = requiredObjects.length-1;
+
+            for (var i = 0; i < requiredObjects.length; ++i){
+                if (!requiredObjects[i].object.value) {
+                    window.alert('「必須」項目は入力必須です。')
+                    break;
+                }else if (i === lastNumOfObjects && requiredObjects[i].object.value) {
+                    if (document.getElementById('privacy').checked){
+                        document.download.submit();
+                    }else{
+                        window.alert("ダウンロードには、プライバシーポリシーへの同意が必要です。");
+                    }
+                }
+            }
+            
         }
     </script>
     <script src="../index.js"></script>
