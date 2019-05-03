@@ -31,7 +31,7 @@
                 <span></span>
                 <span></span>
                 <span></span>
-            </a>              
+            </a>
             <nav class="pc">
                 <ul>
                     <li><a href="../#about">CodeVillageとは</a></li>
@@ -234,7 +234,7 @@
             以下のアンケートにご回答ください。<br>
             ご回答後、ダウンロードボタンをクリックすると、事前課題の第1回「HTML基礎」、第2回「CSS基礎」を無料でダウンロードできます。
         </p>
-        <form action="./contact.php" name="contact" method="POST">
+        <form action="../download.php" name="download" method="POST">
             <table>
                 <tr class="name">
                     <th><label for="name">お名前(フルネーム)</label></th>
@@ -259,13 +259,13 @@
                 <tr class="phone">
                     <th><label for="name">電話番号</label></th>
                     <td class="required true">必須</td>
-                    <td><input type="text" id="name" name="phone"></td>
+                    <td><input type="text" id="phone" name="phone"></td>
                 </tr>
                 <tr>
                     <th>ダウンロードの目的</th>
                     <td class="required true">必須</td>
                     <td>
-                        <select class="sample" id="js-goal" required>
+                        <select class="sample" id="js-goal" name="opportunity" required>
                             <option value="" hidden>選択してください。</option>
                             <option value="プログラミングに興味がある">プログラミングに興味がある</option>
                             <option value="プログラミングを勉強している">プログラミングを勉強している</option>
@@ -273,7 +273,7 @@
                             <option value="プログラミング学習に挫折しそう">プログラミング学習に挫折しそう</option>
                             <option value="その他">その他</option>
                         </select>
-                        <textarea id="js-area" name="other-opinion" class="close-area" placeholder="目的を書いてください。"></textarea>
+                        <textarea id="js-area" name="other" class="close-area" placeholder="目的を書いてください。"></textarea>
                     </td>
                 </tr>
                 <tr>
@@ -284,12 +284,12 @@
             </table>
             <div class="reservation-btn__wrapper">
                 <div class="reservation-btn__bg"></div>
-                <a href="" id="js-validate1" class="reservation-btn__main"></a>
-                <a href="" id="js-validate2" class="reservation-btn__description">ダウンロード</a>    
+                <a href="javascript:download.submit();" id="js-validate1" class="reservation-btn__main"></a>
+                <a href="javascript:download.submit();" id="js-validate2" class="reservation-btn__description">ダウンロード</a>    
             </div>
         </form>
     </section>
-    
+
     <footer>
         <div class="footer-list footer-list-wrap">
             <ul>

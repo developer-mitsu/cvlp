@@ -1326,4 +1326,18 @@ tr.content th {
   #pretask .reservation-btn__description {
     width: 100%; }
 
+.downloading {
+  margin-top: 100px;
+  min-height: 500px; }
+  @media (max-width: 600px) {
+    .downloading {
+      min-height: 300px; } }
+  .downloading p {
+    text-align: center;
+    padding: 10%; }
+  .downloading .reservation-btn__wrapper {
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%); }
+
 /*# sourceMappingURL=main.css.map */

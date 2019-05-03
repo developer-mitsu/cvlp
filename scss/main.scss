@@ -1685,3 +1685,22 @@ tr.content {
         width: 100%;
     }
 }
+
+
+.downloading { 
+    margin-top: 100px;
+    min-height: 500px;
+    @include sp {
+        min-height: 300px; 
+    }
+    p {
+        text-align: center;
+        padding: 10%;
+    }
+
+    .reservation-btn__wrapper {
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
