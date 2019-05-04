@@ -1,184 +1,281 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>CodeVillage</title>
-    <link rel="shortcut icon" href="../favicon.ico">
-    <link href="https://fonts.googleapis.com/css?family=Khula" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">    
-    <link rel="stylesheet" href="../css/reset.css">
-    <link rel="stylesheet" href="../css/main.css">
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    <link rel="shortcut icon" href="../favicon.ico" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Khula"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="../css/main.css" />
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.min.js"
+      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css"
+    />
     <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/object-fit-images/3.2.3/ofi.js"></script>
-
-</head>
-<body>
-<nav class="sp" id="js-navMenu">
-    <a class="menu-close-trigger js-menuCloseTrigger">
+  </head>
+  <body>
+    <nav class="sp" id="js-navMenu">
+      <a class="menu-close-trigger js-menuCloseTrigger">
         <span></span>
         <span></span>
-    </a>
-    <ul>
-        <li><a href="../index.html#about" class="js-menuCloseTrigger"></a>CodeVillageとは</li>
-        <li><a href="../index.html#curriculum" class="js-menuCloseTrigger"></a>カリキュラム</li>
-        <li><a href="../index.html#entry" class="js-menuCloseTrigger"></a>受講について</li>
-        <li><a href="../index.html#tution" class="js-menuCloseTrigger"></a>料金</li>
-        <li class="reservation"><a href="../index.html#contact" id="js-menuCloseTrigger" class="js-menuCloseTrigger"></a>無料カウンセリングを予約する</li>
-    </ul>
-</nav>
-<div class="wrapper">
-    <header>
+      </a>
+      <ul>
+        <li>
+          <a href="../index.html#about" class="js-menuCloseTrigger"></a
+          >CodeVillageとは
+        </li>
+        <li>
+          <a href="../index.html#curriculum" class="js-menuCloseTrigger"></a
+          >カリキュラム
+        </li>
+        <li>
+          <a href="../index.html#entry" class="js-menuCloseTrigger"></a
+          >受講について
+        </li>
+        <li>
+          <a href="../index.html#tution" class="js-menuCloseTrigger"></a>料金
+        </li>
+        <li class="reservation">
+          <a
+            href="../index.html#contact"
+            id="js-menuCloseTrigger"
+            class="js-menuCloseTrigger"
+          ></a
+          >無料カウンセリングを予約する
+        </li>
+      </ul>
+    </nav>
+    <div class="wrapper">
+      <header>
         <h1><a href="../index.html#">Code Village</a></h1>
         <a class="menu-trigger tab" id="js-menuTrigger">
-            <span></span>
-            <span></span>
-            <span></span>
-        </a>              
+          <span></span>
+          <span></span>
+          <span></span>
+        </a>
         <nav class="pc">
-            <ul>
-                <li><a href="../index.html#about">CodeVillageとは</a></li>
-                <li><a href="../index.html#curriculum">カリキュラム</a></li>
-                <li><a href="../index.html#entry">受講について</a></li>
-                <li><a href="../index.html#tution">料金</a></li>
-                <a href="../index.html#contact"><li class="reservation">無料カウンセリングを予約する</li></a>
-            </ul>
+          <ul>
+            <li><a href="../index.html#about">CodeVillageとは</a></li>
+            <li><a href="../index.html#curriculum">カリキュラム</a></li>
+            <li><a href="../index.html#entry">受講について</a></li>
+            <li><a href="../index.html#tution">料金</a></li>
+            <a href="../index.html#contact"
+              ><li class="reservation">無料カウンセリングを予約する</li></a
+            >
+          </ul>
         </nav>
-    </header>
+      </header>
 
-    <section class="student-voice">
-        <img src="../img/student7.jpg" alt="">
+      <section class="student-voice">
+        <img src="../img/student7.jpg" alt="" />
         <p class="name">D.Tさん(22歳 大学生)</p>
 
         <p class="question">Q. なぜプログラミングに興味を持ったんですか？</p>
-        <p class="answer">　建設工学を大学で専攻していたのですが、自分から学ぼうと思えず、学ばされている感覚で受け身になっていたんです。
-            インターンや今後の進路を考え始めた時に不安になってプログラミングを勧められ、今後エンジニアが重宝される事や手に職をつけた方がいいと感じました。
-            ちょっと独学をしてみて面白いと思って本格的に学ぼうと思いスクールに通うことにしました。
+        <p class="answer">
+          建設工学を大学で専攻していたのですが、自分から学ぼうと思えず、学ばされている感覚で受け身になっていたんです。
+          インターンや今後の進路を考え始めた時に不安になってプログラミングを勧められ、今後エンジニアが重宝される事や手に職をつけた方がいいと感じました。
+          ちょっと独学をしてみて面白いと思って本格的に学ぼうと思いスクールに通うことにしました。
         </p>
 
-        <p class="question">Q. プログラミングの好きなところはどんなところですか？</p>
-        <p class="answer">　コードを書いて、ちゃんと動いた時に楽しいし嬉しいです。</p>
+        <p class="question">
+          Q. プログラミングの好きなところはどんなところですか？
+        </p>
+        <p class="answer">
+          コードを書いて、ちゃんと動いた時に楽しいし嬉しいです。
+        </p>
 
         <p class="question">Q. 他のプログラミングスクールと比較しましたか？</p>
-        <p class="answer">　してません。正直プログラミングスクールがそんなにたくさんあると思っていなかったんです（笑）。</p>
+        <p class="answer">
+          してません。正直プログラミングスクールがそんなにたくさんあると思っていなかったんです（笑）。
+        </p>
 
         <p class="question">Q. Code Villageを選んだ理由はなんですか？</p>
-        <p class="answer">スパルタ教育なところがちゃんと自分自身に強制的に自学習を課せられると思い即決しました。最終的にサイト作成とかの目標も立てて挑みました。</p>
+        <p class="answer">
+          スパルタ教育なところがちゃんと自分自身に強制的に自学習を課せられると思い即決しました。最終的にサイト作成とかの目標も立てて挑みました。
+        </p>
 
         <p class="question">Q. 授業の雰囲気はどうでしたか？</p>
-        <p class="answer">プログラミングって一人でひたすらカタカタしてるイメージだったんですけど集団授業ということもあり、想像よりも明るい雰囲気でした。</p>
-        <img src="../img/student6.jpg" class="img-middle" alt="" style="float: left">
+        <p class="answer">
+          プログラミングって一人でひたすらカタカタしてるイメージだったんですけど集団授業ということもあり、想像よりも明るい雰囲気でした。
+        </p>
+        <img
+          src="../img/student6.jpg"
+          class="img-middle"
+          alt=""
+          style="float: left"
+        />
 
         <p class="question">Q. 講師はどうでしたか？</p>
-        <p class="answer">　分かりやすくて、分からないところも解決しやすかったです。今後のキャリアなどの相談にものってもらえたのもよかったです。</p>
-    
-        <p class="question">Q. カリキュラムの内容やレベルはどうでしたか？</p>
-        <p class="answer">　独学を始めるまでは必要最低限のパソコンを使えるレベルだったので、独学し始めた時は難しいと感じましたけど、今思えば簡単だったと思います。それも独学である程度学んだ後だったのでそこまで難しく感じなかっただけだとは思います。自学習でかなり努力もしていました。</p>
-    
-        <p class="question">Q. どのくらいのレベルまで出来るようになりましたか？</p>
-        <p class="answer">　web系のチャットアプリを作りました。
-                HP作成はデザインが飛んでくれば簡単に作れると思います。
-                僕は見た目よりも中身を作るのが好きですね。        
-        </p>
-    
-        <p class="question">Q. 自学習時間の確保は大変ではありませんでしたか？</p>
-        <p class="answer">　プログラミングの勉強が楽しかったので、全然苦にならなりませんでした。</p>
-   
-        <p class="question">Q. プログラミングのどんなところが好きですか？</p>
-        <p class="answer">やる前とのギャップが大きくて好きになりました。
-            基礎から学ぶことによってよく見るwebサイトの仕組みがわかってきて、すごく身近にあるものだと思って更に楽しくなりました。
-            しかもそれを自分でも作れるようになっていったのが楽しかったです。
-            実際にコードを書いてちゃんと動いた時やエラーが解決できた時はスッキリして本当に楽しいんです。
+        <p class="answer">
+          分かりやすくて、分からないところも解決しやすかったです。今後のキャリアなどの相談にものってもらえたのもよかったです。
         </p>
 
-        <p class="question">Q. 働いていて自学習時間が取れない人にとっては難しいカリキュラムだったと思いますか？</p>
-        <p class="answer">　結構難しいかもしれないですが、本人のやる気次第で2時間/日くらい確保できれば問題ないかと思います。</p>
+        <p class="question">Q. カリキュラムの内容やレベルはどうでしたか？</p>
+        <p class="answer">
+          独学を始めるまでは必要最低限のパソコンを使えるレベルだったので、独学し始めた時は難しいと感じましたけど、今思えば簡単だったと思います。それも独学である程度学んだ後だったのでそこまで難しく感じなかっただけだとは思います。自学習でかなり努力もしていました。
+        </p>
+
+        <p class="question">
+          Q. どのくらいのレベルまで出来るようになりましたか？
+        </p>
+        <p class="answer">
+          web系のチャットアプリを作りました。
+          HP作成はデザインが飛んでくれば簡単に作れると思います。
+          僕は見た目よりも中身を作るのが好きですね。
+        </p>
+
+        <p class="question">
+          Q. 自学習時間の確保は大変ではありませんでしたか？
+        </p>
+        <p class="answer">
+          プログラミングの勉強が楽しかったので、全然苦にならなりませんでした。
+        </p>
+
+        <p class="question">Q. プログラミングのどんなところが好きですか？</p>
+        <p class="answer">
+          やる前とのギャップが大きくて好きになりました。
+          基礎から学ぶことによってよく見るwebサイトの仕組みがわかってきて、すごく身近にあるものだと思って更に楽しくなりました。
+          しかもそれを自分でも作れるようになっていったのが楽しかったです。
+          実際にコードを書いてちゃんと動いた時やエラーが解決できた時はスッキリして本当に楽しいんです。
+        </p>
+
+        <p class="question">
+          Q.
+          働いていて自学習時間が取れない人にとっては難しいカリキュラムだったと思いますか？
+        </p>
+        <p class="answer">
+          結構難しいかもしれないですが、本人のやる気次第で2時間/日くらい確保できれば問題ないかと思います。
+        </p>
 
         <p class="question">Q. どのくらい自学習しましたか？</p>
-        <p class="answer">平日３−4時間、土日6時間は自学習してました。予定があったり忙しくても2時間/日は絶対にやっていました。</p>
+        <p class="answer">
+          平日３−4時間、土日6時間は自学習してました。予定があったり忙しくても2時間/日は絶対にやっていました。
+        </p>
 
         <p class="question">Q. 苦労した点はありますか？</p>
-        <p class="answer">授業中のわからない点はその場で聞けたんですけど、自学習中にわいた分からない点を解決できなくて大変でした。もちろん、できる限り自分で調べてからですが、質問ができる仕組みがあれば良かったなと思います。(*)</p>
-        <p class="comment">(*現行のカリキュラムでは、オンラインで質問出来るシステムを完備しております。)</p>
+        <p class="answer">
+          授業中のわからない点はその場で聞けたんですけど、自学習中にわいた分からない点を解決できなくて大変でした。もちろん、できる限り自分で調べてからですが、質問ができる仕組みがあれば良かったなと思います。(*)
+        </p>
+        <p class="comment">
+          (*現行のカリキュラムでは、オンラインで質問出来るシステムを完備しております。)
+        </p>
 
-        <p class="question">Q. Code Villageならではの魅力はどんなところだと感じましたか？</p>
-        <p class="answer">一番は自学習を強制化してくれたところが大きいです。自学習をしなければカリキュラムについていけないので危機感を持って取り組めました。相談しやすい人間関係も支えとなりました。</p>
+        <p class="question">
+          Q. Code Villageならではの魅力はどんなところだと感じましたか？
+        </p>
+        <p class="answer">
+          一番は自学習を強制化してくれたところが大きいです。自学習をしなければカリキュラムについていけないので危機感を持って取り組めました。相談しやすい人間関係も支えとなりました。
+        </p>
 
-        <p class="question">Q. Code Villageに通って得たこと(技術以外で)はありますか？</p>
-        <p class="answer">　自学習能力がつきました。あとは、学習の習慣付けが出来るようになりましたね。</p>
+        <p class="question">
+          Q. Code Villageに通って得たこと(技術以外で)はありますか？
+        </p>
+        <p class="answer">
+          自学習能力がつきました。あとは、学習の習慣付けが出来るようになりましたね。
+        </p>
 
         <p class="question">Q. 挫折しそうになったことがありますか？</p>
-        <p class="answer">　最初に独学でやっていた時に無理だなって感じた事もありますが、受講し始めて基礎から適切なプロセスを学べて乗り越えることができました。</p>
+        <p class="answer">
+          最初に独学でやっていた時に無理だなって感じた事もありますが、受講し始めて基礎から適切なプロセスを学べて乗り越えることができました。
+        </p>
 
         <p class="question">Q. どのくらい自学習しましたか？</p>
-        <p class="answer">授業の日の授業前に集中的に時間を作るようにして、他の日も夜やっていました。忙しくても必ず毎日パソコンを開く習慣をつけていました。平均したら1日に2時間ですが、多い日は5時間くらいは自学習していました。</p>
-
-        <p class="question">Q. これからのキャリアについてどのように考えていますか？</p>
         <p class="answer">
-            元々は公務員志望だったんです（笑）。安定しているからと言う理由だけだったんですけどね。
-            今はIT業界に絞っていて、web系にいきたいと思っています。
-            フロントエンドとバックエンド両方学んでみた結果、バックエンドのスペシャリストになりたいと思いました。     
-            将来的にはフリーランスやフルリモートの会社で働きたいと思っています。
+          授業の日の授業前に集中的に時間を作るようにして、他の日も夜やっていました。忙しくても必ず毎日パソコンを開く習慣をつけていました。平均したら1日に2時間ですが、多い日は5時間くらいは自学習していました。
         </p>
-    
-        <p class="question">Q. フリーランスやフルリモートは安定とはかけ離れているのでは？</p>
-        <p class="answer">安定を確保するために始めは就職してスキルと実務経験を積んでいきたいと思っています。</p>
+
+        <p class="question">
+          Q. これからのキャリアについてどのように考えていますか？
+        </p>
+        <p class="answer">
+          元々は公務員志望だったんです（笑）。安定しているからと言う理由だけだったんですけどね。
+          今はIT業界に絞っていて、web系にいきたいと思っています。
+          フロントエンドとバックエンド両方学んでみた結果、バックエンドのスペシャリストになりたいと思いました。
+          将来的にはフリーランスやフルリモートの会社で働きたいと思っています。
+        </p>
+
+        <p class="question">
+          Q. フリーランスやフルリモートは安定とはかけ離れているのでは？
+        </p>
+        <p class="answer">
+          安定を確保するために始めは就職してスキルと実務経験を積んでいきたいと思っています。
+        </p>
 
         <p class="question">Q. 起業に興味はありますか？</p>
         <p class="answer">
-            起業したいとは思ってないです。
-            作り上げることがやっぱり好きなので、スタートアップベンチャーで働きたいとは思います。 
+          起業したいとは思ってないです。
+          作り上げることがやっぱり好きなので、スタートアップベンチャーで働きたいとは思います。
         </p>
 
-        <p class="question">Q. これからプログラミングを勉強しようとしている人に一言ください。</p>
+        <p class="question">
+          Q. これからプログラミングを勉強しようとしている人に一言ください。
+        </p>
         <p class="answer">
-            一番大変なのは最初だと思います。<br>
-            プログラミングはなんなのかから始まって行くと思うので、そこが分からなくなるとこんがらがってつまずくかもしれないです。<br>
-            ただ、そこでつまずいても諦めないでほしいと思います。<br>
-            絶対できるようになるので、多少つまずいても、めげずにとにかく続けてみてほしいです！
+          一番大変なのは最初だと思います。<br />
+          プログラミングはなんなのかから始まって行くと思うので、そこが分からなくなるとこんがらがってつまずくかもしれないです。<br />
+          ただ、そこでつまずいても諦めないでほしいと思います。<br />
+          絶対できるようになるので、多少つまずいても、めげずにとにかく続けてみてほしいです！
         </p>
 
-    </section>
+        <!-- pagenateボタン -->
+        <div class="pagenate">
+          <a href="../student3/index.html" class="page-btn prev-voice">前へ</a>
+          <a href="../student2/index.html" class="page-btn next-voice">次へ</a>
+        </div>
+      </section>
 
-    <footer>
+      <footer>
         <div class="footer-list footer-list-wrap">
-            <ul>
-                <li><a href="../index.html#about">特徴</a></li>
-                <li><a href="../index.html#flow">講義</a></li>
-                <li><a href="../index.html#curriculum">カリキュラム</a></li>
-                <li><a href="../index.html#entry">入校までの流れ</a></li>
-                <li><a href="../index.html#voice">生徒の声</a></li>
-                <li><a href="../index.html#faq">よくあるご質問</a></li>
-                <li><a href="../index.html#tution">受講料</a></li>
-                <li><a href="../index.html#contact">お問い合わせ</a></li>
-            </ul>
-            <ul>
-                <li><a href="../index.html#access">東京池袋校</a></li>
-                <li><a href="../index.html#access">大阪梅田校</a></li>
-            </ul>
-            <div class="footer-list__icon">
-                <i class="fab fa-twitter-square"></i>
-                <i class="fab fa-facebook-square"></i>
-            </div>
+          <ul>
+            <li><a href="../index.html#about">特徴</a></li>
+            <li><a href="../index.html#flow">講義</a></li>
+            <li><a href="../index.html#curriculum">カリキュラム</a></li>
+            <li><a href="../index.html#entry">入校までの流れ</a></li>
+            <li><a href="../index.html#voice">生徒の声</a></li>
+            <li><a href="../index.html#faq">よくあるご質問</a></li>
+            <li><a href="../index.html#tution">受講料</a></li>
+            <li><a href="../index.html#contact">お問い合わせ</a></li>
+          </ul>
+          <ul>
+            <li><a href="../index.html#access">東京池袋校</a></li>
+            <li><a href="../index.html#access">大阪梅田校</a></li>
+          </ul>
+          <div class="footer-list__icon">
+            <i class="fab fa-twitter-square"></i>
+            <i class="fab fa-facebook-square"></i>
+          </div>
         </div>
         <div class="footer-logo">
-            <ul class="privacies">
-                <li><a href="./SCT">特定商取引法に基づく表記</a></li>
-                <li><a href="./privacy_policy">プライバシーポリシー</a></li>
-            </ul>
-            <p>permil inc.</p>
+          <ul class="privacies">
+            <li><a href="./SCT">特定商取引法に基づく表記</a></li>
+            <li><a href="./privacy_policy">プライバシーポリシー</a></li>
+          </ul>
+          <p>permil inc.</p>
         </div>
-    </footer>
+      </footer>
+    </div>
 
-</div>
-
-<script>
-    objectFitImages();
-</script>
-<script src="../index.js"></script>
-</body>
+    <script>
+      objectFitImages();
+    </script>
+    <script src="../index.js"></script>
+  </body>
 </html>
