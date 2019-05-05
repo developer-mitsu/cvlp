@@ -1340,4 +1340,10 @@ tr.content th {
     left: 50%;
     transform: translateX(-50%); }
 
+.pagenate {
+  width: 20%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around; }
+
 /*# sourceMappingURL=main.css.map */
