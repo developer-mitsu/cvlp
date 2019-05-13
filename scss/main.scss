@@ -1309,6 +1309,14 @@ body.is-menu-open {
             min-height: 300px;
             resize: none;
         }
+        .school-choose {
+            input {
+                width: 2em;
+                & + * {
+                    margin-left: 3em;
+                }
+            }
+        }
 
         table {
             width: 100%;

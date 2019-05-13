@@ -1044,6 +1044,10 @@ body.is-menu-open .wrapper {
     .contact form textarea {
       min-height: 300px;
       resize: none; }
+    .contact form .school-choose input {
+      width: 2em; }
+      .contact form .school-choose input + * {
+        margin-left: 3em; }
     .contact form table {
       width: 100%;
       border-collapse: separate;
