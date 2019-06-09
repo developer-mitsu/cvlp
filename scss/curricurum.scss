@@ -542,6 +542,7 @@ body.is-menu-open {
         background-color: #FF2757;
         z-index: 5;
         left: 0;
+        cursor: pointer;
         animation: btn 1s 0s infinite alternate none cubic-bezier(0.175, 0.885, 0.32, 1.275);
 
     }
@@ -559,6 +560,7 @@ body.is-menu-open {
         left: 5%;
         text-align: center;
         box-sizing: border-box;
+        cursor: pointer;
     }
     &__description {
         text-align: center;
@@ -573,6 +575,7 @@ body.is-menu-open {
         text-decoration: none;
         font-weight: bold;
         word-break : break-all;
+        cursor: pointer;
         @include tab {
             width: 80%;
             left: 50%;
